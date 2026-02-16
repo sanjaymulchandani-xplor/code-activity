@@ -596,7 +596,6 @@ class CodeActivityTracker {
         ` : `
             <div class="card">
                 <div class="empty-state">
-                    <div class="empty-icon">📊</div>
                     <h3 class="empty-title">No Activity Yet</h3>
                     <p>Start coding to see your activity insights!</p>
                 </div>
