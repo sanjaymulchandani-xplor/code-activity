@@ -1,0 +1,73 @@
+{
+    "name": "devpulse",
+    "displayName": "DevPulse - Code Activity Tracker",
+    "description": "Track your coding activity, monitor time spent in each programming language, and visualize your developer habits with beautiful insights.",
+    "version": "1.0.0",
+    "publisher": "devpulse",
+    "author": {
+        "name": "DevPulse"
+    },
+    "license": "MIT",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#0D0D12",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other",
+        "Visualization"
+    ],
+    "keywords": [
+        "productivity",
+        "time tracking",
+        "statistics",
+        "activity",
+        "coding time",
+        "language stats",
+        "developer tools"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "codeActivity.showStats",
+                "title": "DevPulse: Show Activity Dashboard",
+                "icon": "$(pulse)"
+            },
+            {
+                "command": "codeActivity.resetStats",
+                "title": "DevPulse: Reset All Statistics"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "eslint src --ext ts",
+        "package": "vsce package"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^6.13.0",
+        "@typescript-eslint/parser": "^6.13.0",
+        "eslint": "^8.54.0",
+        "typescript": "^5.3.0",
+        "vsce": "^2.15.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devpulse/vscode-devpulse"
+    },
+    "bugs": {
+        "url": "https://github.com/devpulse/vscode-devpulse/issues"
+    },
+    "homepage": "https://github.com/devpulse/vscode-devpulse#readme"
+}

@@ -1,0 +1,31 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="24" fill="#0D0D12"/>
+  <rect x="8" y="8" width="112" height="112" rx="20" fill="#141318"/>
+  
+  <!-- Pulse line -->
+  <path d="M20 64 L35 64 L42 45 L52 83 L62 35 L72 75 L80 55 L88 64 L108 64" 
+        stroke="#27CE98" 
+        stroke-width="4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none">
+    <animate attributeName="stroke-dasharray" values="0,200;200,0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Glow effect -->
+  <path d="M20 64 L35 64 L42 45 L52 83 L62 35 L72 75 L80 55 L88 64 L108 64" 
+        stroke="#27CE98" 
+        stroke-width="8" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"
+        opacity="0.3"
+        filter="blur(4px)"/>
+  
+  <!-- Bottom bars -->
+  <rect x="24" y="88" width="12" height="20" rx="2" fill="#2C2C30"/>
+  <rect x="42" y="78" width="12" height="30" rx="2" fill="#2C2C30"/>
+  <rect x="60" y="85" width="12" height="23" rx="2" fill="#27CE98"/>
+  <rect x="78" y="72" width="12" height="36" rx="2" fill="#2C2C30"/>
+  <rect x="96" y="82" width="12" height="26" rx="2" fill="#2C2C30"/>
+</svg>
